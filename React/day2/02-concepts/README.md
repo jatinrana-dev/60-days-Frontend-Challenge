@@ -1,12 +1,25 @@
-# React + Vite
+Concepts: 
+JSX Expressions & useState
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+What I learned
 
-Currently, two official plugins are available:
+=> JSX Expressions
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* JSX lets you embed any valid JavaScript expression inside markup using curly braces {}
+* Works for variables, arithmetic, function calls, ternary conditions, and string concatenation
+* Only expressions are allowed inside {} — not full statements like if or for loops
+* Common use case: displaying dynamic values (like a name or calculated result) directly in the UI
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+=> useState
+ * useState is a React Hook that lets a component "remember" and update data between renders
+ *  Import it with import { useState } from 'react'
+ * Returns an array: the current value and a function to update it, e.g. const [count, setCount] = useState(0)
+ * Calling the setter function (e.g. setCount(count + 1)) triggers React to re-render the component with the new value
+ * State is local to the component — each component instance keeps its own separate state
+ * Unlike regular variables, updating a normal JS variable doesn't cause React to re-render the UI, but updating state does
+
+
+ =>What I practiced
+* Displaying dynamic values inside JSX using expressions (variables, simple math, a ternary for conditional text)
+* A basic counter component using useState — a button that increments a number on click and displays the updated value
