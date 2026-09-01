@@ -1,12 +1,15 @@
-# React + Vite
+Day 2 - Components & Basic Layout
+What I learned
+How to break a UI into separate, reusable components instead of writing everything in one file
+Each component is its own .jsx file that returns JSX, and gets imported wherever it's needed
+How components come together inside a parent component (App.jsx) to build a full page
+The basic pattern: Header, MainContent, and Footer as separate components, composed inside App
+What I built
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A basic webpage layout split into 3 components:
 
-Currently, two official plugins are available:
+Header — site title and navigation links (Home / About / Contact)
+MainContent — heading, paragraph content, and body of the page
+Footer — copyright text
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+All three are imported into App.jsx and rendered together inside a single <div>
