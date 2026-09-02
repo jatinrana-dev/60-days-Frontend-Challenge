@@ -1,9 +1,9 @@
 Concepts: 
-JSX Expressions & useState
+JSX Expressions & UseState
 
 What I learned
 
-=> JSX Expressions
+==> JSX Expressions
 
 * JSX lets you embed any valid JavaScript expression inside markup using curly braces {}
 * Works for variables, arithmetic, function calls, ternary conditions, and string concatenation
