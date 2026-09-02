@@ -7,6 +7,7 @@ const App = () => {
     <div>
       <Expressions/>
       <About/>
+      <h1>hieeeee guysss how are uuuu</h1>
 
     </div>
   )
