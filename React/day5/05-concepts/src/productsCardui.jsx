@@ -4,6 +4,8 @@ import React from 'react'
 
 const ProductsCardui = ({product , del}) => {
     
+
+  
   return (
 <div className="w-64 bg-white rounded-xl shadow-md overflow-hidden border border-gray-200 hover:shadow-xl transition-shadow duration-300" >
       <img
